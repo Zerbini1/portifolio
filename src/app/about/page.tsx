@@ -2,86 +2,57 @@ export default function AboutPage() {
   return (
     <>
       <h1 className="mb-16 mt-4 text-center text-5xl max-sm:text-4xl">
-        About me
+        Sobre Mim
       </h1>
       <article>
         <p>
-          I was born in São Paulo and moved to{" "}
-          <a href="https://en.wikipedia.org/wiki/Florian%C3%B3polis">
-            Florianópolis
-          </a>{" "}
-          as a 10 year old kid. I fell in love with the nature, sport and music
-          culture of the Magical Island.
+          Moro em Serra-ES e sempre fui fascinado por entender como as coisas funcionam. Minha jornada começou na Engenharia de Controle e Automação (IFES), onde aprendi a lógica por trás de sistemas complexos.
         </p>
-        <p>
-          In the next decade, I{" "}
-          <a href="https://open.spotify.com/artist/4ymHKBTThfeOL114lwCWPQ?si=c30897c35e404259">
-            became a singer-songwriter
-          </a>
-          , got a Karate blue belt, won two Carnaval trophies and reached Diamond IV in League of Legends.
+        <p>  
+          Durante minha graduação, percebi que o &quot;novo petróleo&quot; não era apenas automatizar máquinas, mas sim o que fazemos com os dados que elas geram. Isso me levou a mergulhar no mundo da Engenharia de Dados.
         </p>
-        <p>
-          Then I studied Economics at{" "}
-          <a href="https://en.wikipedia.org/wiki/Federal_University_of_Santa_Catarina">
-            Federal University of Santa Catarina
-          </a>
-          , mostly for my love for History and Math. I learned a lot of
-          Politics, Statistics and Macroeconomics.
+
+        <p>    
+          Hoje, atuo como estagiário na área de Governança de Dados, onde lido diariamente com ambientes de Big Data (Databricks, PySpark) e ajudo a garantir que a informação certa chegue às pessoas certas.
         </p>
+
         <p>
-          But I&apos;d spent too long studying models that weren&apos;t
-          applicable in real-life. I felt disconnected from my studies which led
-          to me dropping out after 2 years.
+          Quando não estou construindo pipelines ETL ou otimizando queries SQL, provavelmente estou explorando novas tecnologias, lendo sobre tendências em dados ou estou jogando Online.
         </p>
-        <p>
-          Then came my first contact with programming: as a Data Analyst at a
-          Tech startup. We used Microsoft Excel and Power BI to generate our
-          reports.
+        
+        <p className="mt-6">
+          Criador do projeto <a href="/projects">Sentinela da Dengue</a>, onde implemento 
+          Arquitetura Medalhão para análise de dados epidemiológicos.
         </p>
-        <p>
-          With millions of data entries, it wasn&apos;t long until my Dell
-          notebook became unusably slow. This led me to learn Python and Pandas
-          to better deal with datasets, as well as Selenium and pyautogui.
+        
+        <h2 className="mt-8 mb-4 text-2xl font-semibold">🚀 Habilidades Técnicas</h2>
+        <p> 
+          🐍 Linguagens: Python, SQL, C#, Java.
+        </p> 
+        <p>  
+          ⚙️ Engenharia: PySpark, Databricks, ETL, Data Lake.
+        </p> 
+        <p>  
+          🛠️ Ferramentas: Git, GitHub, Azure.
+        </p> 
+        <p>  
+          📊 Visualização: Power BI, Matplotlib.
         </p>
-        <p>
-          I&apos;ve always been obsessed with user interfaces. My friends
-          couldn&apos;t bear me pointing out broken buttons and ugly websites
-          all the time.
+        
+        <p className="mt-8">
+          Entre em contato comigo através do{" "}
+          <a href="https://www.linkedin.com/in/felipe-zerbini">LinkedIn</a> ou email{" "}
+          <a href="mailto:felipezerbini.ss@gmail.com">felipezerbini.ss@gmail.com</a>.
         </p>
-        <p>
-          When I found out what HTML was, I did a deep dive into the Frontend. I
-          completed FreeCodeCamp&apos;s{" "}
-          <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">
-            Responsive Web Design
-          </a>{" "}
-          and swiftly progressed to Javascript and React soon after.
+        
+        <p className="mt-6">
+          Vamos construir algo incrível juntos! 🚀
         </p>
-        <p>
-          I became more active within the Brazilian Dev community, sharing
-          quirky UI bugs and building my projects in public such as{" "}
-          <a href="https://phived.com">phived</a> and{" "}
-          <a href="https://css2wind.com">css2wind</a>. I collaborated with
-          hundreds of developers and contributed a lot to Open Source.
-        </p>
-        <p>
-          In 2024, I traveled to Torino, Italy to visit my dad. My life flipped
-          upside down and I ended up living in Málaga for a while. After I{" "}
-          <a href="/articles/how-not-to-get-a-job-in-spain">
-            failed to get a job
-          </a>
-          , I moved to the UK and landed a job in London, where I currently
-          live.
-        </p>
-        <p>
-          Send me a DM on{" "}
-          <a href="https://x.com/lukeberrypi">X</a> or an email{" "}
-          <a href="mailto:lukeberrypi@gmail.com">lukeberrypi@gmail.com</a>.
-        </p>
-        <p>Smile, you&apos;re alive :)</p>
-        <p>
-          Best,
+        
+        <p className="mt-4">
+          Abraços,
           <br />
-          Luke
+          Felipe
         </p>
       </article>
     </>

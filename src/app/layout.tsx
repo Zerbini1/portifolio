@@ -8,8 +8,8 @@ import dynamic from "next/dynamic";
 // import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
-  title: "Luke Berry",
-  description: "Luke Berry's personal website",
+  title: "Felipe Zerbini | Engenheiro de Dados",
+  description: "Portfólio de Felipe Zerbini - Engenheiro de Dados especializado em Python, SQL e Pipelines de Dados",
 };
 
 const karla = Karla({
@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="min-h-screen" suppressHydrationWarning>
+    <html lang="pt-br" className="min-h-screen" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -62,28 +62,21 @@ export default function RootLayout({
           <div className="flex items-center gap-4">
             <a
               className="decoration-zinc-500 underline-offset-4 transition-transform sm:hover:underline dark:decoration-zinc-400"
-              href="https://github.com/LukeberryPi/blog"
+              href="https://github.com/Zerbini1"
               target="_blank"
             >
-              Code
+              GitHub
             </a>
-            <Link
-              className="decoration-zinc-500 underline-offset-4 transition-transform sm:hover:underline dark:decoration-zinc-400"
-              target="_blank"
-              href="/rss.xml"
-            >
-              RSS Feed
-            </Link>
             <a
               className="decoration-zinc-500 underline-offset-4 transition-transform sm:hover:underline dark:decoration-zinc-400"
-              href="https://x.com/LukeberryPi"
+              href="https://www.linkedin.com/in/felipe-zerbini"
               target="_blank"
             >
-              @LukeberryPi
+              LinkedIn
             </a>
           </div>
           <blockquote className="text-zinc-800 dark:text-zinc-300">
-            Smile, you&apos;re alive :)
+            Transformando dados em insights 🚀
           </blockquote>
         </footer>
       </body>

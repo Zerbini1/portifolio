@@ -8,7 +8,7 @@ export default async function ArticlesPage() {
   return (
     <div>
       <h1 className="mb-16 mt-4 text-center text-5xl max-sm:text-4xl">
-        Articles
+        Artigos
       </h1>
 
       {/* TODO: add tags filter (OR between all selections)
