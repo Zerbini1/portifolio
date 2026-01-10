@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfólio - Felipe Zerbini
 
-## Getting Started
+Portfólio pessoal de Felipe Zerbini, Data Engineer especializado em Python, SQL e pipelines de dados.
 
-First, run the development server:
+## 🚀 Sobre
+
+Este é meu portfólio profissional onde apresento meus projetos, habilidades e experiência na área de Engenharia de Dados. O site foi desenvolvido com Next.js 14 e TailwindCSS.
+
+### Projeto em Destaque
+
+**Sentinela da Dengue** - Pipeline End-to-End que analisa a correlação entre fatores climáticos e surtos de dengue no Espírito Santo, implementando Arquitetura Medalhão (Bronze/Silver/Gold) para processar dados de 78 municípios.
+
+## 🛠️ Tecnologias
+
+- **Framework:** Next.js 14
+- **Estilo:** TailwindCSS
+- **Linguagem:** TypeScript
+- **Deploy:** Vercel
+
+## 📦 Instalação e Uso
 
 ```bash
+# Instalar dependências
+npm install
+
+# Rodar em desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build para produção
+npm run build
+
+# Rodar versão de produção
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse [http://localhost:3000](http://localhost:3000) no navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 Estrutura do Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `/src/app/page.tsx` - Página inicial com informações pessoais
+- `/src/app/projects/page.tsx` - Página de projetos
+- `/src/app/about/page.tsx` - Página sobre mim
+- `/public/` - Arquivos estáticos (CV, imagens)
 
-## Learn More
+## 🌐 Deploy
 
-To learn more about Next.js, take a look at the following resources:
+Este projeto está configurado para deploy na Vercel. Para fazer deploy:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Faça push do código para o GitHub
+2. Conecte seu repositório na [Vercel](https://vercel.com)
+3. A Vercel irá automaticamente fazer o build e deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📬 Contato
 
-## Deploy on Vercel
+- **LinkedIn:** [felipe-zerbini](https://www.linkedin.com/in/felipe-zerbini)
+- **GitHub:** [Zerbini1](https://github.com/Zerbini1)
+- **Email:** felipezerbini.ss@gmail.com
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 Créditos
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Template original desenvolvido por [Luke Berry](https://github.com/LukeberryPi/blog). Personalizado e adaptado para meu portfólio profissional.
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
