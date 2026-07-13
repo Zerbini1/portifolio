@@ -17,8 +17,18 @@ function isThemeSetToDark() {
 
 export default function Header() {
   const path = usePathname();
-  const isHome = path === "/";
+  const isEnglish = path.startsWith("/en");
+  const isHome = path === "/" || path === "/en";
   const [isDarkMode, setIsDarkMode] = useState(isThemeSetToDark());
+  const projectsPath = isEnglish ? "/en/projects" : "/projects";
+  const aboutPath = isEnglish ? "/en/about" : "/about";
+  const languagePath = isEnglish ? path.replace(/^\/en/, "") || "/" : `/en${path === "/" ? "" : path}`;
+  const projectsLabel = isEnglish ? "/projects" : "/projetos";
+  const aboutLabel = isEnglish ? "/about" : "/sobre";
+  const projectsAria = isEnglish ? "View projects" : "Ver projetos";
+  const aboutAria = isEnglish ? "About me" : "Sobre mim";
+  const languageLabel = isEnglish ? "PT" : "EN";
+  const languageAria = isEnglish ? "Switch to Portuguese" : "Switch to English";
 
   useEffect(() => {
     if (isThemeSetToDark()) {
@@ -80,11 +90,11 @@ export default function Header() {
           </button>
           <Link
             className="group relative rounded px-2 py-px sm:hover:ring-1 ring-sky-500 transition-transform dark:ring-sky-600"
-            href="/projects"
-            aria-label="Ver projetos"
-            aria-current={path === "/projects" ? "page" : undefined}
+            href={projectsPath}
+            aria-label={projectsAria}
+            aria-current={path === "/projects" || path === "/en/projects" ? "page" : undefined}
           >
-            /projetos
+            {projectsLabel}
             <Triangle
               aria-hidden="true"
               className="absolute left-1/2 mt-1 hidden size-2 fill-sky-500 text-zinc-800 group-aria-[current=page]:block dark:fill-sky-600 dark:text-transparent"
@@ -92,15 +102,22 @@ export default function Header() {
           </Link>
           <Link
             className="group relative rounded px-2 py-px sm:hover:ring-1 ring-sky-500 transition-transform dark:ring-sky-600"
-            href="/about"
-            aria-label="Sobre mim"
-            aria-current={path === "/about" ? "page" : undefined}
+            href={aboutPath}
+            aria-label={aboutAria}
+            aria-current={path === "/about" || path === "/en/about" ? "page" : undefined}
           >
-            /sobre
+            {aboutLabel}
             <Triangle
               aria-hidden="true"
               className="absolute left-1/2 mt-1 hidden size-2 fill-sky-500 text-zinc-800 group-aria-[current=page]:block dark:fill-sky-600 dark:text-transparent"
             />
+          </Link>
+          <Link
+            className="group relative rounded border border-zinc-300 px-2 py-px text-sm font-semibold uppercase tracking-wide text-zinc-700 transition-transform sm:hover:border-sky-500 sm:hover:text-sky-600 dark:border-zinc-600 dark:text-zinc-200 dark:sm:hover:border-sky-600 dark:sm:hover:text-sky-400"
+            href={languagePath}
+            aria-label={languageAria}
+          >
+            {languageLabel}
           </Link>
         </div>
       </nav>

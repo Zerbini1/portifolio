@@ -6,38 +6,47 @@ export default function AboutPage() {
       </h1>
       <article>
         <p>
-          Moro em Serra-ES e sempre fui fascinado por entender como as coisas funcionam. Minha jornada começou na Engenharia de Controle e Automação (IFES), onde aprendi a lógica por trás de sistemas complexos.
+          Moro na Serra-ES e sempre fui fascinado por entender como as coisas funcionam. Minha jornada começou na Engenharia de Controle e Automação (IFES), onde aprendi a lógica por trás de sistemas complexos.
         </p>
-        <p>  
-          Durante minha graduação, percebi que o &quot;novo petróleo&quot; não era apenas automatizar máquinas, mas sim o que fazemos com os dados que elas geram. Isso me levou a mergulhar no mundo da Engenharia de Dados.
-        </p>
-
-        <p>    
-          Hoje, atuo como estagiário na área de Governança de Dados, onde lido diariamente com ambientes de Big Data (Databricks, PySpark) e ajudo a garantir que a informação certa chegue às pessoas certas.
+        <p>
+          Durante a graduação, percebi que a verdadeira mágica não estava apenas em automatizar máquinas, mas no que fazemos com os dados que elas geram. Isso me puxou naturalmente para o mundo da Engenharia de Dados.
         </p>
 
         <p>
-          Quando não estou construindo pipelines ETL ou otimizando queries SQL, provavelmente estou explorando novas tecnologias, lendo sobre tendências em dados ou estou jogando Online.
+          Hoje, atuo como Engenheiro de Dados. Passo meus dias construindo pipelines escaláveis e lidando com alto volume de dados (usando ferramentas como PySpark, Databricks e Microsoft Fabric) para garantir que a informação certa chegue às pessoas certas, no momento certo.
+        </p>
+
+        <p>
+          Quando não estou construindo ETLs ou otimizando queries SQL, provavelmente estou explorando novas tecnologias em nuvem ou jogando online.
         </p>
         
         <p className="mt-6">
-          Criador do projeto <a href="/projects">Sentinela da Dengue</a>, onde implemento 
-          Arquitetura Medalhão para análise de dados epidemiológicos.
+          Também sou o criador do projeto <a href="/projects">Sentinela da Dengue</a>, onde implementei uma Arquitetura Medalhão de ponta a ponta para analisar dados epidemiológicos.
         </p>
         
-        <h2 className="mt-8 mb-4 text-2xl font-semibold">🚀 Habilidades Técnicas</h2>
-        <p> 
-          🐍 Linguagens: Python, SQL, C#, Java.
-        </p> 
-        <p>  
-          ⚙️ Engenharia: PySpark, Databricks, ETL, Data Lake.
-        </p> 
-        <p>  
-          🛠️ Ferramentas: Git, GitHub, Azure.
-        </p> 
-        <p>  
-          📊 Visualização: Power BI, Matplotlib.
-        </p>
+<h2 className="mt-8 mb-4 text-2xl font-semibold">Habilidades Técnicas</h2>
+        <ul className="space-y-2 !pl-0">
+          <li className="!pl-0 before:content-none flex gap-2">
+            <span aria-hidden className="mt-2 h-2 w-2 shrink-0 rounded-full bg-white" />
+            <span><strong>Linguagens:</strong> Python, SQL.</span>
+          </li>
+          <li className="!pl-0 before:content-none flex gap-2">
+            <span aria-hidden className="mt-2 h-2 w-2 shrink-0 rounded-full bg-white" />
+            <span><strong>Dados &amp; Nuvem:</strong> Apache Spark, PySpark, Databricks, Microsoft Fabric, Azure Data Factory.</span>
+          </li>
+          <li className="!pl-0 before:content-none flex gap-2">
+            <span aria-hidden className="mt-2 h-2 w-2 shrink-0 rounded-full bg-white" />
+            <span><strong>Arquitetura:</strong> Arquitetura Medalhão, Data Lakes, pipelines ETL/ELT.</span>
+          </li>
+          <li className="!pl-0 before:content-none flex gap-2">
+            <span aria-hidden className="mt-2 h-2 w-2 shrink-0 rounded-full bg-white" />
+            <span><strong>Analytics:</strong> Power BI (DAX, Direct Lake).</span>
+          </li>
+          <li className="!pl-0 before:content-none flex gap-2">
+            <span aria-hidden className="mt-2 h-2 w-2 shrink-0 rounded-full bg-white" />
+            <span><strong>Ferramentas:</strong> Git, GitHub, Linux.</span>
+          </li>
+        </ul>
         
         <p className="mt-8">
           Entre em contato comigo através do{" "}
@@ -45,9 +54,6 @@ export default function AboutPage() {
           <a href="mailto:felipezerbini.ss@gmail.com">felipezerbini.ss@gmail.com</a>.
         </p>
         
-        <p className="mt-6">
-          Vamos construir algo incrível juntos! 🚀
-        </p>
         
         <p className="mt-4">
           Abraços,

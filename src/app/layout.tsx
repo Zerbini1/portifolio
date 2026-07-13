@@ -5,6 +5,7 @@ import "./globals.css";
 import { ScrollToTop } from "../components/scroll-to-top";
 import Script from "next/script";
 import dynamic from "next/dynamic";
+import { LocalizedFooter } from "../components/localized-footer";
 // import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
@@ -58,27 +59,7 @@ export default function RootLayout({
           {children}
           <ScrollToTop />
         </main>
-        <footer className="mx-auto flex max-w-prose flex-col max-sm:items-start items-center gap-2 py-6 text-sm text-zinc-500 dark:text-zinc-400">
-          <div className="flex items-center gap-4">
-            <a
-              className="decoration-zinc-500 underline-offset-4 transition-transform sm:hover:underline dark:decoration-zinc-400"
-              href="https://github.com/Zerbini1"
-              target="_blank"
-            >
-              GitHub
-            </a>
-            <a
-              className="decoration-zinc-500 underline-offset-4 transition-transform sm:hover:underline dark:decoration-zinc-400"
-              href="https://www.linkedin.com/in/felipe-zerbini"
-              target="_blank"
-            >
-              LinkedIn
-            </a>
-          </div>
-          <blockquote className="text-zinc-800 dark:text-zinc-300">
-            Transformando dados em insights 🚀
-          </blockquote>
-        </footer>
+        <LocalizedFooter />
       </body>
     </html>
   );
